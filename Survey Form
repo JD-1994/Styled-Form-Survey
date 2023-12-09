@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deslopes Survey form</title>
+    <style>
+        
+        #ageInput {
+            width: 380px; \
+        }
+       #selectInput {
+            width: 390px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Devslopes Survey Form</h1>
+        
+    </header>
+
+    <main>
+                    <h4>Thank you for taking the time to help us improve the platform</h4> 
+      <div class ="survey">
+          <form action="submit_page.html" method="post">
+   
+            <label for = "firstlastname"><strong>Name</strong></label><br>
+              <input id ="firstlastname" name="firstlastname" type ="text" size="50" placeholder="Enter your name" required><br><br>
+              
+            <label for = "email"><strong>Email:</strong></label><br>
+               <input id ="email" name="email" type ="email" placeholder="Enter your email" size="50" required><br><br>
+             
+            <label for="ageInput"><strong>Age: (optional)</strong></label><br>
+    <input type="number" id="ageInput" name="age"  min="1" max="120"  placeholder="Age"><br><br>
+                <label for="selectInput"><strong>Which option best describes your current role</strong></label><br>
+    <select id="selectInput" name="options" required>
+ 
+             <option value="" disabled selected>Select current role</option>
+             <option>Student</option>
+              <option>Full Time Job</option>              
+              <option>Full Time Learner</option>
+              <option>Prefer not to say</option>
+              <option>Other</option>
+             
+            </select> <br><br>
+     
+           
+              
+            <label><strong>Would you recommend Devslopes to a friend</strong></label>
+    <br>
+                <label>
+            <input type="radio" name="answer" value="yes"> Yes
+        </label><br>
+        
+        <label>
+            <input type="radio" name="answer" value="maybe"> Maybe
+        </label><br>
+        
+        <label>
+            <input type="radio" name="answer" value="notsure"> Not Sure
+        </label><br><br>
+             <label for="selectInput"><strong>What is your favorite feature of Devslopes</strong></label><br>
+    <select id="selectInput" name="options" required>
+ 
+               <option value="" disabled selected>Select an option</option>
+             <option>Challenges</option>
+              <option>Projects</option>              
+              <option>Community</option>
+              <option>Mentorship</option>
+             
+             
+            </select> <br><br>
+      <label>
+        <label for="checkbox"><strong>What would you like to see improved (Check all that apply)</strong></label><br>
+            <input type="checkbox" name="options" value="option1"> Front-end projects
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="options" value="option2"> Back-end projects
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="options" value="option3"> Challenges
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="options" value="option4"> Videos
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="options" value="option5"> Online meet ups
+        </label>
+        <br>
+        <label>
+            <input type="checkbox" name="options" value="option6"> Community 
+        </label><br><br>
+            <label for="messageTextarea"><strong>Any comments or suggestions?</strong></label><br>
+    <textarea id="messageTextarea" name="message" rows="4" cols="50" placeholder="Enter your comments here" required></textarea>
+
+         
+
+       <br><br>
+            <div class="submit">
+            <input type="submit" value="Submit" style="width: 390px;">
+            </div>
+              </form>
+      
+            </div>
+       
+    </main>
+
+
+   
+
+</body>
+</html>
